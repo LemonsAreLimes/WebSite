@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="src/MenuBar.css">
+        <link rel="stylesheet" href="src/content.css">
+        <link rel="stylesheet" href="src/pageOpen.css">
+        <script src="src/MenuBar.js"></script>
+        <title>projects</title>
+
+        <script>
+            window.onload = LoadPage();
+        </script>
+        <style>
+            html{background-color: rgb(66, 66, 68);}
+        </style>
+    </head>
+    <body style="overflow-x: hidden;">
+        <div id="loadingPage" class="loadingPage">
+            <h1 id="loadtext" class="loadingText"></h1>
+        </div>
+        <div class="MenuBar" id="menu" onmouseenter="OpenMenu()" onmouseleave="CloseMenu()">
+            <p id="homeIcon" class="MenuItem">📜</p>
+            <p id="projectsIcon" class="MenuItem">🖥️</p>
+            <p id="aboutmeIcon" class="MenuItem">📁</p>
+        </div>
+        <div class="contentArea">
+            <div class="titleBar">
+                <h1 class="titleText">Projects</h1>
+            </div>
+            <div class="contentContainer">
+                <div class="project" onclick="window.open('https://github.com/LemonsAreLimes/EpicWebpage.github.io')">
+                    <h1 class="pjTitle">EpicSite</h1>
+                    <p class="pjDesc">V2 out now!</p>
+                    <p class="pjDesc">Spoiler: its this site</p>
+                </div>
+                <div class="project">
+                    <h1 class="pjTitle">Test</h1>
+                    <p class="pjDesc">desc1</p>
+                    <p class="pjDesc">desc2</p>
+                </div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+        </div>
+    </body>
+</html

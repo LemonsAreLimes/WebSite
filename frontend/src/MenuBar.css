@@ -1,0 +1,84 @@
+.MenuBar{
+    margin: 0%;
+
+    height: 100vh;
+    width: 100px;
+
+    display: inline-grid;
+    grid-auto-rows: 100px 100px;
+    grid-auto-columns: 100px 300px;
+    
+    z-index: 10;
+
+    justify-items: left;
+    align-items: center;
+
+    position: fixed;
+    left: 0%;
+    top: 0%;
+
+    background-color: rgb(36, 35, 35);
+
+    transition: width 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.MenuBar:hover{
+    width: 400px;
+}
+
+.MenuItem{
+    font-size: 50px;
+    margin: 15px;
+}
+
+
+@keyframes OpenMenuText {
+    0% {opacity: 0%; left:-10%;}
+    100% {opacity: 100%; left:0%;}
+}
+
+.MenuText{
+    font-size: 50px;
+    font-family: 'Bakbak One', cursive;
+
+    justify-self: left;
+    grid-column-start: 2;
+
+    position: relative;
+    left:0%;
+
+    text-decoration: none;
+
+    color: white;
+    opacity: 100%;
+
+    animation-name: OpenMenuText;
+    animation-duration: 500ms;
+}
+
+@keyframes TextHover{
+    0% {color: #33FF55;}
+    50% {color: #FFFF4D;}
+    100% {color: #33FF55;}
+}
+
+.MenuText:hover{
+    border-bottom: 2px solid white;
+
+    animation-name: TextHover;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes TextClose {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+.closeMenuText{
+    opacity: 0%;
+
+    animation-name: TextClose;
+    animation-duration: 150ms;
+}

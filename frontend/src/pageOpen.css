@@ -1,0 +1,77 @@
+:root{
+    --ContentAreaWidth: calc(100vw - 100px);
+
+}
+
+
+
+.loadingPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(36, 35, 35);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    
+    z-index: 1000;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@keyframes PageClose {
+    0% {width: 100vw;}
+    100% {width: 0vw;}
+}
+
+.loadingPageAnimClose {
+    height: 100vh;
+    width: 0vw;
+    background-color: rgb(36, 35, 35);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    animation-name: PageClose;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1,.54,0,1);
+}
+
+@keyframes PageOpen{
+    0% {width: 0vw;}
+    100% {width: 100vw;}
+}
+
+.loadingPageAnimOpen{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(36, 35, 35);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1000;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    animation-name: PageOpen;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,1.35,1,-0.29);
+}
+
+.loadingText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+

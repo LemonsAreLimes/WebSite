@@ -1,0 +1,139 @@
+:root{
+    --TitleWidth: calc(100vw - 100px);
+
+    --LargeBoxWidth: calc(100vw - 100px);
+    --LargeBoxHeight: calc(100vh - 100px);
+
+    --contentHeight: calc(100vh - 100px);
+    --contentWidth: calc(100vw - 100px);
+
+    --ProjectWidth: calc((100vw - 100px) / 3);
+}
+
+.contentArea{
+    margin: 0%;
+    padding: 0%;
+
+    height: 100vh;
+    width: var(--ContentAreaWidth);
+
+    position: absolute;
+    top: 0px;
+    left: 100px;
+
+    display: grid;
+    grid-auto-rows: 100px;
+
+    background-color: rgb(66, 66, 68);
+}
+
+
+.contentContainer{
+    height: var(--contentHeight);
+    width: var(--contentWidth);
+
+    display: grid;
+    grid-template-columns: var(--ProjectWidth) var(--ProjectWidth) var(--ProjectWidth);
+    grid-template-rows: 300px 300px 300px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.project{
+    margin: 0%;
+
+    height: 300px;
+    width: var(--ProjectWidth);
+    background-color: rgb(44, 44, 44);
+
+    text-align: center;
+}
+
+@keyframes ProjectHover{
+    0% {rotate: 0deg;}
+    25% {rotate: -5deg;}
+    75% {rotate: 5deg;}
+    100% {rotate: 0deg;}
+}
+
+.project:hover{
+    z-index: 11;
+    border: 2px solid rgb(128, 124, 124);
+
+    animation-name: ProjectHover;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+
+}
+
+.pjTitle{
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.pjDesc{
+    margin: 0%;
+
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.titleBar{
+    margin: 0%;
+    padding: 0%;
+
+    height: 100px;
+    width: var(--TitleWidth);
+
+    background-color: rgb(36, 35, 35);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.titleText{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+.FullViewBox{
+    height: var(--LargeBoxHeight);
+    width: var(--LargeBoxWidth);
+
+    justify-self: center;
+
+    background-color: rgb(42, 43, 54);
+
+    display: grid;
+    grid-auto-rows: 30px 50px 30px 50px 50px 50px 50px;
+    /*may the css gods forgive me */
+
+    justify-items: center;
+    align-items: center;
+}
+
+
+.LargeBoxTitle{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.desc{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+

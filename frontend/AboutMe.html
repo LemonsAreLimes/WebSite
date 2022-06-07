@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="src/MenuBar.css">
+        <link rel="stylesheet" href="src/content.css">
+        <link rel="stylesheet" href="src/pageOpen.css">
+        <script src="src/MenuBar.js"></script>
+        <script>
+            window.onload = LoadPage();
+        </script>
+        <title>About lemons</title>
+    </head>
+    <body>
+        <div id="loadingPage" class="loadingPage">
+            <h1 id="loadtext" class="loadingText"></h1>
+        </div>
+        <div class="MenuBar" id="menu" onmouseenter="OpenMenu()" onmouseleave="CloseMenu()">
+            <p id="homeIcon" class="MenuItem">📜</p>
+            <p id="projectsIcon" class="MenuItem">🖥️</p>
+            <p id="aboutmeIcon" class="MenuItem">📁</p>
+        </div>
+        <div class="contentArea">
+            <div class="titleBar">
+                <h1 class="titleText">Who is lemons are limes?</h1>
+            </div>
+            <div class="FullViewBox">
+                <div></div>
+                <h1 class="LargeBoxTitle">A better question would be: who are you?</h1>
+                <div></div>
+                <p class="desc">i havent used html / css in quite a while</p>
+                <p class="desc">currentlly this is a static site</p>
+                <p class="desc">however, i have the server all coded up</p>
+                <p class="desc">i just need to finish this site</p>
+            </div>
+        </div>
+    </body>
+</html
