@@ -12,21 +12,21 @@ server.use(express.json());
 server.post('/send', async (req, res)=>{
     console.log('got a request!');
 
-    LogUser();
+    // LogUser();
 });
 
-async function LogUser(){
+// async function LogUser(){
 
-    const DB = await fsp.readFile('USERLOG.json');
-    const ParsedDB = JSON.parse(DB);
+//     const DB = await fsp.readFile('USERLOG.json');
+//     const ParsedDB = JSON.parse(DB);
 
-    const NewData = 'New user!'
+//     const NewData = 'New user!'
 
-    ParsedDB.push(NewData);
+//     ParsedDB.push(NewData);
 
-    const NewDB = JSON.stringify(ParsedDB);
-    fs.writeFile('USERLOG.json', NewDB, (err)=>{
-        if(err){console.log('error')}
-        else {console.log('new user written')}
-    });
-}
+//     const NewDB = JSON.stringify(ParsedDB);
+//     fs.writeFile('USERLOG.json', NewDB, (err)=>{
+//         if(err){console.log('error')}
+//         else {console.log('new user written')}
+//     });
+// }
