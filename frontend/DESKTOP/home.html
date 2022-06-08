@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="../src/desktop/MenuBar.css">
+        <link rel="stylesheet" href="../src/desktop/content.css">
+        <link rel="stylesheet" href="../src/desktop/pageOpen.css">
+        <script src="../src/desktop/MenuBar.js"></script>
+
+        <script>
+            window.onload = LoadPage();
+        </script> 
+
+        <style>
+            html{background-color: rgb(66, 66, 68);}
+        </style>
+
+        <title>Home page</title>
+    </head>
+    <body>
+        <div id="loadingPage" class="loadingPage">
+            <h1 id="loadtext" class="loadingText"></h1>
+        </div>
+        <div class="MenuBar" id="menu" onmouseenter="OpenMenu()" onmouseleave="CloseMenu()">
+            <p id="homeIcon" class="MenuItem">📜</p>
+            <p id="projectsIcon" class="MenuItem">🖥️</p>
+            <p id="aboutmeIcon" class="MenuItem">📁</p>
+        </div>
+        <div class="contentArea">
+            <div class="titleBar">
+                <h1 class="titleText">What is this place?</h1>
+            </div>
+            <div class="FullViewBox">
+                <div></div>
+                <h1 class="LargeBoxTitle">Welcome to my buggy dungeon</h1>
+                <div></div>
+                <p class="desc">finally got the hosting to work</p>
+                <p class="desc">this is the site where you can get</p>
+                <p class="desc">exclusive news about new projects / apps</p>
+                <p class="desc"></p>
+                <p class="desc">sorry if ur on mobile</p>
+                <p class="desc">i havent really added support for that yet...</p>
+                <p class="desc">though i plan to</p>
+            </div>
+        </div>
+    </body>
+</html
