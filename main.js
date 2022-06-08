@@ -4,7 +4,9 @@ const fsp = require('fs/promises');
 
 const server = express();
 
-server.listen(3000, ()=>{console.log('server open')});
+const PORT = process.env.PORT || 8080
+
+server.listen(PORT, ()=>{console.log('server open')});
 
 server.use(express.static('../frontend'));
 server.use(express.json());
