@@ -8,9 +8,12 @@ function CheckForMobile(){
     
     if (is_mobile != null){
         document.getElementById("output").innerText = "you are on moblie"
+        window.open("MOBILE/home.html");
+
     } else {
         document.getElementById("output").innerText = "you are not on moblie"
-        console.log('not mobile')
+        window.open("DESKTOP/home.html");
     }
+
 
 }
