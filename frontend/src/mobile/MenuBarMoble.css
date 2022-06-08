@@ -1,0 +1,36 @@
+.menuBar {
+
+    margin: 0%;
+    padding: 0%;
+
+    width: 100vw;
+    height: 100px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    display: grid;
+
+    grid-template-columns: 100px 100px 100px;
+
+    grid-auto-flow: column;
+    
+
+
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgb(58, 57, 57);
+}
+
+.MenuItem {
+    margin: 0%;
+    padding: 0%;
+
+    color: white;
+    font-size: 50px;
+
+    text-align: center;
+
+}
