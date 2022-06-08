@@ -117,7 +117,7 @@
     background-color: rgb(42, 43, 54);
 
     display: grid;
-    grid-auto-rows: 30px 50px 30px 50px 50px 50px 50px;
+    grid-auto-rows: 30px 50px 30px 50px 50px 50px 50px 50px 50px 50px ;
     /*may the css gods forgive me */
 
     justify-items: center;
