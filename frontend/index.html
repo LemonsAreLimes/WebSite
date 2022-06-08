@@ -17,7 +17,7 @@
                 body: JSON.stringify({DATA:"hehe index loaded for some1"})
             } //heroku dosent tell me if someone has visisted the site or not :/
 
-            window.onload = fetch('/send', options);
+            window.onload = LoadPage(); fetch('/send', options); 
 
         </script>
     </head>
