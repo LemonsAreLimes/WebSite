@@ -11,7 +11,14 @@
         <!-- <script src="src/GleamData.js"></script> -->
         <title>Home page</title>
         <script>
-            window.onload = LoadPage();
+            const options = {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({DATA:"hehe index loaded for some1"})
+            } //heroku dosent tell me if someone has visisted the site or not :/
+
+            window.onload = fetch('/send', options);
+
         </script>
     </head>
     <body>
