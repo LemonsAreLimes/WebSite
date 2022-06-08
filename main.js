@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080
 
 server.listen(PORT, ()=>{console.log('server open')});
 
-server.use(express.static('../frontend'));
+server.use(express.static('frontend'));
 server.use(express.json());
 
 server.post('/send', async (req, res)=>{
