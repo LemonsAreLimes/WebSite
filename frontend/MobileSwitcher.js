@@ -8,11 +8,11 @@ function CheckForMobile(){
     
     if (is_mobile != null){
         document.getElementById("output").innerText = "you are on moblie"
-        window.open("MOBILE/home.html");
+        document.location.href = "MOBILE/home.html"
 
     } else {
         document.getElementById("output").innerText = "you are not on moblie"
-        window.open("DESKTOP/home.html");
+        document.location.href = "DESKTOP/home.html"
     }
 
 
