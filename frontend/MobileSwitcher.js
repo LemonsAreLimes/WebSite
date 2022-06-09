@@ -7,13 +7,9 @@ function CheckForMobile(){
     console.log('script ran')
     
     if (is_mobile != null){
-        document.getElementById("output").innerText = "you are on moblie"
         document.location.href = "MOBILE/home.html"
 
     } else {
-        document.getElementById("output").innerText = "you are not on moblie"
         document.location.href = "DESKTOP/home.html"
     }
-
-
 }
