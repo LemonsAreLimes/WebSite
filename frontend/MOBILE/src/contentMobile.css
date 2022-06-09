@@ -1,0 +1,24 @@
+.titleBar {
+    position: absolute;
+    left: 0%;
+    top: 0;
+
+    width: 100vw;
+    height: 100px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    background-color: rgb(56, 54, 54);
+
+}
+
+.titleText {
+    margin: 0%;
+
+    font-family: 'Bakbak One', cursive;
+    font-size: 50px;
+
+    color: white;
+}
