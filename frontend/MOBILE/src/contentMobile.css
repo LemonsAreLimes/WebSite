@@ -32,14 +32,13 @@
     top: 100px;
 
     width: 100vw;
-    height: calc(100vh - 200px);
 
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
     align-content: top;
 
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(17, 17, 17);
 }
 
 .ContentItem {
@@ -47,6 +46,17 @@
 
     background-color: rgb(17, 17, 17);
     text-align: center;
+}
+
+.project {
+    margin-top: 10px;
+
+    height: max-content;
+    width: 100vw;
+
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+
 }
 
 .title{
