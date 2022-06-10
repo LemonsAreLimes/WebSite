@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
 
         <link rel="stylesheet" href="src/MenuBarMoble.css">
         <link rel="stylesheet" href="src/contentMobile.css">
+        <link rel="stylesheet" href="src/PageOpen.css">
+        <script src="src/PageOpen.js"></script>
+        
     </head>
     <body style="overflow-x: hidden;">
         <div class="titleBar">
@@ -40,9 +42,12 @@
             </div>
         </div>
         <div id="menu" class="menuBar">
-            <a class="MenuItem" href="aboutme.html">📝</a>
-            <a class="MenuItem" href="home.html">🏠</a>
-            <a class="MenuItem" href="projects.html">🖥️</a>
+            <a class="MenuItem" onclick="CloseSite(1)">📝</a>
+            <a class="MenuItem" onclick="CloseSite(2)">🏠</a>
+            <a class="MenuItem" onclick="CloseSite(3)">🖥️</a>
+        </div>
+        <div id="TranstionBox">
+            <h1 id="TransitionText"></h1>
         </div>
     </body>
 </html>
