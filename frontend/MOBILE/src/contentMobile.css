@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(17, 17, 17);
+}
+
 .titleBar {
     position: absolute;
     left: 0%;

@@ -21,6 +21,8 @@
   "homepage": "https://github.com/LemonsAreLimes/WebSite#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.6"
   }
 }
