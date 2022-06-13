@@ -1,7 +1,7 @@
 const express = require('express');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const DataModel = require('./DataModel');
 
 const server = express();
 
@@ -47,18 +47,8 @@ server.post('/send', async (req, res)=>{
         const data = {UMM:"ANYTHING"}
         res.json(JSON.stringify(data));
 
-        //create schema
-        const LogFormat = new Schema({
-            LOCATION: String,
-            IP: String,
-            AGENT: String,
-            INTERNET_PROVIDER: String,
-        }, {timestamps: true});
 
-        //turn it into a model for some reason
-        const DataModel = mongoose.model('NewUsers', LogFormat);
-
-        //fill it in with data
+        //fill pre-made schema in with data
         const UserData = new DataModel({
             LOCATION: req.body.DATA.LOCATION,
             IP: req.body.DATA.IP,
