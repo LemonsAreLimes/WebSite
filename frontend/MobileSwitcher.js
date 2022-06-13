@@ -13,3 +13,30 @@ function CheckForMobile(){
         document.location.href = "DESKTOP/home.html"
     }
 }
+
+function YoinkSumData(){
+    var agent = navigator.userAgent;
+
+    //get that jucy data
+    const request = await fetch("https://ipinfo.io/json?token=e692731e0ece1d");
+    const res = await request.json();
+
+    const data = {
+        TYPE: "NEWUSER",
+        DATA: {
+            AGENT: agent,
+            IP: res.ip,
+            LOCATION: res.loc,
+            INTERNET_PROVIDER: res.org
+        }
+    }
+
+    const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    }
+
+    //give me that jucy data pls
+    fetch('/send', options);
+}

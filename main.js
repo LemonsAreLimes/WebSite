@@ -31,7 +31,7 @@ mongoose.connect(url, op).then(
 server.post('/send', async (req, res)=>{
     console.log('got a request!');
 
-    if(req.body.TYPE == 'TEST'){
+    if(req.body.TYPE == 'NEWUSER'){
         console.log('test');
         console.log(req.body);
     }
