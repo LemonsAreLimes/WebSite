@@ -20,20 +20,19 @@ async function YoinkSumData(){
 
     console.log('yoinkin...');
 
-    // //get that jucy data
-    // const request = await fetch("https://ipinfo.io/json?token=e692731e0ece1d");
-    // const res = await request.json();
+    //get that jucy data
+    const request = await fetch("https://ipinfo.io/json?token=e692731e0ece1d");
+    const res = await request.json();
 
-    // const data = {
-    //     TYPE: "NEWUSER",
-    //     DATA: {
-    //         AGENT: agent,
-    //         IP: res.ip,
-    //         LOCATION: res.loc,
-    //         INTERNET_PROVIDER: res.org
-    //     }
-
-    const data = {TYPE:"TEST"}
+    const data = {
+        TYPE: "NEWUSER",
+        DATA: {
+            AGENT: agent,
+            IP: res.ip,
+            LOCATION: res.loc,
+            INTERNET_PROVIDER: res.org
+        }
+    }
 
     const options = {
         method: 'POST',
