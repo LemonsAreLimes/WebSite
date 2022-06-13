@@ -1,5 +1,6 @@
 
 function CheckForMobile(){
+    await YoinkSumData();
 
     const is_mobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i);
 
@@ -14,7 +15,7 @@ function CheckForMobile(){
     }
 }
 
-function YoinkSumData(){
+async function YoinkSumData(){
     var agent = navigator.userAgent;
 
     //get that jucy data
