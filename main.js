@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080
 
 const Password = process.env.MongoPass;
 const Username = process.env.MongoUsername;
-console.log("mongo pass:" + MongoPass);
+console.log("mongo pass:" + Password);
 
 server.listen(PORT, ()=>{console.log('server open')});
 
