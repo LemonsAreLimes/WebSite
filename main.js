@@ -30,6 +30,7 @@ mongoose.connect(url, op).then(
 
 server.post('/send', async (req, res)=>{
     console.log('got a request!');
+    console.log(req.body);
 
     if(req.body.TYPE == 'NEWUSER'){
         console.log('test');
