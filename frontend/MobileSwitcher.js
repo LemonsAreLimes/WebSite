@@ -16,13 +16,12 @@ async function CheckForMobile(){
 }
 
 async function YoinkSumData(){
-    // var agent = navigator.userAgent;
-
     console.log('yoinkin...');
 
     //get that jucy data
     const request = await fetch("https://ipinfo.io/json?token=e692731e0ece1d");
     const res = await request.json();
+    var agent = navigator.userAgent;
 
     const data = {
         TYPE: "NEWUSER",
