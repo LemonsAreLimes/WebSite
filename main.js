@@ -16,7 +16,7 @@ server.listen(PORT, ()=>{console.log('server open')});
 server.use(express.static('frontend'));
 server.use(express.json());
 
-const url = "mongodb+srv://"+Username+":"+Password+"@sitelogging.ccoj7.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://"+Username+":"+Password+"@sitelogging.ccoj7.mongodb.net/UserLog?retryWrites=true&w=majority";
 const op = { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }
 
 console.log('connecting to mongo DB...');
