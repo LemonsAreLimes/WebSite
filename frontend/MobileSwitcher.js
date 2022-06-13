@@ -1,6 +1,6 @@
 
 async function CheckForMobile(){
-    YoinkSumData();
+    await YoinkSumData()
 
     const is_mobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i);
 

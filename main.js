@@ -34,6 +34,8 @@ server.post('/send', async (req, res)=>{
 
     if(req.body.TYPE == "TEST"){
         console.log('test');
+        const data = {UMM:"ANYTHING"}
+        res.json(JSON.stringify(data));
     }
 
     if(req.body.TYPE == 'NEWUSER'){
