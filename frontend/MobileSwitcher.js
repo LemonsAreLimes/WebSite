@@ -1,6 +1,6 @@
 
 async function CheckForMobile(){
-    await YoinkSumData();
+    YoinkSumData();
 
     const is_mobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/BlackBerry/i);
 
@@ -18,6 +18,8 @@ async function CheckForMobile(){
 async function YoinkSumData(){
     // var agent = navigator.userAgent;
 
+    console.log('yoinkin...');
+
     // //get that jucy data
     // const request = await fetch("https://ipinfo.io/json?token=e692731e0ece1d");
     // const res = await request.json();
@@ -30,7 +32,7 @@ async function YoinkSumData(){
     //         LOCATION: res.loc,
     //         INTERNET_PROVIDER: res.org
     //     }
-    // }
+
     const data = {TYPE:"TEST"}
 
     const options = {
